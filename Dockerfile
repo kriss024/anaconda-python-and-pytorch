@@ -19,8 +19,7 @@ RUN pip install psycopg2-binary \
 && pip install --upgrade gensim \
 && pip install eli5
 
-RUN conda install -y -c pytorch pytorch torchvision torchaudio cpuonly \
-&& conda install -y -c conda-forge dill \
+RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge python-graphviz \
 && conda install -y -c conda-forge shap \
 && conda install -y -c conda-forge imbalanced-learn=0.5.0 \
@@ -37,7 +36,8 @@ RUN conda install -y -c pytorch pytorch torchvision torchaudio cpuonly \
 && conda install -y -c conda-forge py-xgboost \
 && conda install -y -c conda-forge lightgbm \
 && conda install -y -c conda-forge theano \
-&& conda install -y -c conda-forge geopy
+&& conda install -y -c conda-forge geopy \
+&& conda install -y pytorch torchvision torchaudio cpuonly -c pytorch
 
 # Installing extensions for Jupyter Notebooks
 RUN pip install jupyter_contrib_nbextensions \
