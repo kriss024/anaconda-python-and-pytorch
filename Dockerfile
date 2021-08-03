@@ -37,6 +37,8 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge lightgbm \
 && conda install -y -c conda-forge theano \
 && conda install -y -c conda-forge geopy \
+&& conda install -y -c conda-forge catboost \
+&& conda install -y -c anaconda joblib \
 && conda install -y pytorch torchvision torchaudio cpuonly -c pytorch
 
 # Installing extensions for Jupyter Notebooks
