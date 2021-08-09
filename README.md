@@ -1,5 +1,5 @@
 # Anaconda Python 3.8.8 for Data Science use
-# Set with PyTorch and CatBoost libraries
+# Python with PyTorch and CatBoost libraries
 
 ## How to Use this Image
 To launch the container, run the following command:
