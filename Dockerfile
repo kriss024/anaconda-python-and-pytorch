@@ -14,7 +14,7 @@ RUN conda update conda -y \
 && conda update --all -y \
 && python -m pip install --upgrade pip
 
-# Installing additional libraries for Python
+# Installing additional libraries
 RUN pip install psycopg2-binary \
 && pip install --upgrade gensim \
 && pip install eli5
