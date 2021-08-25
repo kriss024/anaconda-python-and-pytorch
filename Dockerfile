@@ -59,5 +59,5 @@ WORKDIR /home/notebooks
 # Jupyter listens port: 8888
 EXPOSE 8888
 
-# Run Jupytewr Notebook
+# Run Jupyter Notebooks
 CMD jupyter notebook --notebook-dir=/home/notebooks --ip='*' --port 8888 --no-browser --allow-root
