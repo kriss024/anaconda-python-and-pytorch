@@ -41,7 +41,7 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c anaconda joblib \
 && conda install -y pytorch torchvision torchaudio cpuonly -c pytorch
 
-# Installing extensions for Jupyter Notebooks
+# Installing extensions for Jupyter Notebook
 RUN pip install jupyter_contrib_nbextensions \
 && jupyter contrib nbextension install --system \
 && pip install jupyter_nbextensions_configurator \
@@ -50,7 +50,7 @@ RUN pip install jupyter_contrib_nbextensions \
 && pip install yapf \
 && pip install nbconvert==5.6.1
 
-# Creating a directory for Jupyter Notebooks
+# Creating a directory for Jupyter Notebook
 RUN mkdir -p /home/notebooks
 
 # Setting working directory
@@ -59,5 +59,5 @@ WORKDIR /home/notebooks
 # Jupyter listens port: 8888
 EXPOSE 8888
 
-# Run Jupyter Notebooks
+# Running Jupyter Notebook
 CMD jupyter notebook --notebook-dir=/home/notebooks --ip='*' --port 8888 --no-browser --allow-root
